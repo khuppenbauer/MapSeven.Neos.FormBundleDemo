@@ -1,0 +1,19 @@
+{namespace form=TYPO3\Form\ViewHelpers}
+<f:form.validationResults for="{element.identifier}">
+    <fieldset>
+        <section>
+            <label class="label">{element.label -> f:format.nl2br()}<f:if condition="{element.required}"><f:render partial="TYPO3.Form:Field/Required" /></f:if></label>
+            <f:if condition="{element.properties.containerClassAttribute}">
+                <f:then>
+                    <label class="{element.properties.containerClassAttribute} {f:if(condition: validationResults.flattenedErrors, then: ' state-error')}"><f:render section="field" /></label>
+                </f:then>
+                <f:else>
+                    <f:render section="field" />
+                </f:else>
+            </f:if>
+            <f:if condition="{validationResults.flattenedErrors}">
+                <f:for each="{validationResults.errors}" as="error"><div class="note note-error">{error}</div></f:for>
+            </f:if>
+        </section>
+    </fieldset>
+</f:form.validationResults>

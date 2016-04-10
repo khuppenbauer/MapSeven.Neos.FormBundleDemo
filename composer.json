@@ -1,0 +1,19 @@
+{
+    "description": "Examples for the NeosCMS Form bundle",
+    "type": "typo3-flow-plugin",
+    "name": "mapseven/neos-formbundledemo",
+    "license": "MIT",
+    "require": {
+        "mapseven/neos-formbundle": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MapSeven\\Neos\\FormBundleDemo": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "MapSeven.Neos.FormBundleDemo"
+        }
+    }
+}

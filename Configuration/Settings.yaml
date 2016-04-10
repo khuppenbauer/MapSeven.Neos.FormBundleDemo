@@ -1,0 +1,27 @@
+TYPO3:
+  Form:
+    yamlPersistenceManager:
+      savePath: 'resource://MapSeven.Neos.FormBundleDemo/Private/Form/'
+    presets:
+      demoForm:
+        title: 'Form'
+        parentPreset: default
+        formElementTypes:
+          'TYPO3.Form:Form':
+            renderingOptions:
+              templatePathPattern: 'resource://MapSeven.Neos.FormBundleDemo/Private/Templates/Form/Form.html'
+          'TYPO3.Form:Base':
+            renderingOptions:
+              layoutPathPattern: 'resource://MapSeven.Neos.FormBundleDemo/Private/Templates/Form/{@type}.html'
+          'TYPO3.Form:Page':
+            renderingOptions:
+              templatePathPattern: 'resource://MapSeven.Neos.FormBundleDemo/Private/Templates/Form/Page.html'
+
+  Neos:
+    typoScript:
+      autoInclude:
+        'MapSeven.Neos.FormBundleDemo': true
+    userInterface:
+      translation:
+        autoInclude:
+          'MapSeven.Neos.FormBundleDemo': ['NodeTypes/*']

@@ -1,0 +1,13 @@
+##
+# Set the default preset for the "Form" element
+#
+prototype(MapSeven.Neos.FormBundleDemo:ContactForm) {
+	presetName = 'demoForm'
+	@cache {
+		mode = 'uncached'
+		context {
+			1 = 'node'
+			2 = 'documentNode'
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{namespace formBundle=MapSeven\Neos\FormBundle\ViewHelpers}
+<div{attributes -> f:format.raw()}>
+<f:if condition="{formIdentifier}">
+    <f:then>
+        <formBundle:render persistenceIdentifier="{formIdentifier}" presetName="{presetName}" overrideConfiguration="{finishers: {'TYPO3.Form:Email': {options: {recipientAddress: node.properties.recipientAddress}}}}" />
+    </f:then>
+    <f:else>
+        <p>Please select a valid Form identifier in the inspector</p>
+    </f:else>
+</f:if>
+</div>
