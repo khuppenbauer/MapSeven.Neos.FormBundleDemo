@@ -16,6 +16,9 @@ TYPO3:
           'TYPO3.Form:Page':
             renderingOptions:
               templatePathPattern: 'resource://MapSeven.Neos.FormBundleDemo/Private/Templates/Form/Page.html'
+          'TYPO3.Form:MultipleSelectCheckboxes':
+            renderingOptions:
+              templatePathPattern: 'resource://MapSeven.Neos.FormBundleDemo/Private/Templates/Form/{@type}.html'
 
   Neos:
     typoScript:

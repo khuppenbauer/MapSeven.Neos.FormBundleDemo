@@ -25,3 +25,42 @@
         reloadIfChanged: true
         inspector:
           group: form
+
+'MapSeven.Neos.FormBundleDemo:PostForm':
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Form': true
+  ui:
+    label: i18n
+    icon: 'icon-envelope-alt'
+    inspector:
+      groups:
+        persistenceOptions:
+          label: i18n
+          position: 40
+  properties:
+    formIdentifier:
+      ui:
+        inspector:
+          group: form
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: i18n
+            values:
+              '':
+                label: ''
+              post:
+                label: i18n
+    db:
+      type: boolean
+      defaultValue: true
+      ui:
+        label: i18n
+        inspector:
+          group: persistenceOptions
+    elasticSearch:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: i18n
+        inspector:
+          group: persistenceOptions

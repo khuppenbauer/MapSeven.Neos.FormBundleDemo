@@ -11,3 +11,14 @@ prototype(MapSeven.Neos.FormBundleDemo:ContactForm) {
 		}
 	}
 }
+
+prototype(MapSeven.Neos.FormBundleDemo:PostForm) {
+	presetName = 'demoForm'
+	@cache {
+		mode = 'uncached'
+		context {
+			1 = 'node'
+			2 = 'documentNode'
+		}
+	}
+}

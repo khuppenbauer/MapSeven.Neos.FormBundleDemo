@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="MapSeven.Neos.FormBundleDemo" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="ui.label" xml:space="preserve">
+				<source>Demo Post Form</source>
+			</trans-unit>
+			<trans-unit id="groups.persistenceOptions" xml:space="preserve">
+				<source>Persistence Options</source>
+			</trans-unit>
+			<trans-unit id="properties.formIdentifier" xml:space="preserve">
+				<source>Form Identifier</source>
+			</trans-unit>
+			<trans-unit id="properties.formIdentifier.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Select the Form identifier</source>
+			</trans-unit>
+			<trans-unit id="properties.formIdentifier.selectBoxEditor.values.post" xml:space="preserve">
+				<source>Post</source>
+			</trans-unit>
+			<trans-unit id="properties.db" xml:space="preserve">
+				<source>Database</source>
+			</trans-unit>
+			<trans-unit id="properties.elasticSearch" xml:space="preserve">
+				<source>ElasticSearch</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
